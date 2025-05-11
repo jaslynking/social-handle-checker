@@ -12,7 +12,7 @@ const ResultsList = ({ results }: ResultsListProps) => {
   return (
     <div className="mb-8">
       <h2 className="text-xl font-semibold mb-4">
-        Results for @{results.username}
+        Results for <span className="text-indigo-500">@{results.username}</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {results.results.map((result) => (
@@ -33,7 +33,7 @@ const ResultsList = ({ results }: ResultsListProps) => {
               href={result.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 text-sm hover:underline"
+              className="text-indigo-600 text-sm hover:underline"
             >
               View {result.name} Profile
             </a>

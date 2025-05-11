@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Lexend } from "next/font/google";
+
+const lexend = Lexend({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Social Handle Checker",
@@ -12,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={lexend.className}>
       <body>{children}</body>
     </html>
   );
