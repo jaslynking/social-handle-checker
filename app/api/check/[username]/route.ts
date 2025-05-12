@@ -53,9 +53,9 @@ async function checkUsername(
 
 export async function GET(
   request: NextRequest,
-  context: { params: { username: string } }
+  { params }: { params: Record<string, string> }
 ) {
-  const username = context.params.username;
+  const username = params.username;
 
   if (!username || username.length < 3) {
     return NextResponse.json(
