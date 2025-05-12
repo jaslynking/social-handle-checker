@@ -39,6 +39,7 @@ async function checkUsername(
       url: `${platform.url}${username}`,
     };
   } catch (error) {
+    console.error("Error checking username:", error);
     // If request fails or times out
     return {
       platform: platform.id,
@@ -76,6 +77,7 @@ export async function GET(
       results,
     });
   } catch (error) {
+    console.error("Failed to check username availability:", error);
     return NextResponse.json(
       { error: "Failed to check username availability" },
       { status: 500 }
