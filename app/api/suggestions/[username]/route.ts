@@ -2,9 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { username: string } }
+  context: { params: { username: string } }
 ) {
-  const username = params.username;
+  const username = context.params.username;
 
   if (!username) {
     return NextResponse.json(
