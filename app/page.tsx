@@ -55,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-background">
       <Header />
 
       <main className="container mx-auto px-4 py-8 relative z-10">
@@ -83,7 +83,7 @@ export default function Home() {
               {platforms.map((platform) => (
                 <span
                   key={platform.id}
-                  className="bg-gray-200 px-3 py-1 rounded text-sm"
+                  className="bg-gray-200 px-3 py-1 rounded text-sm dark:text-gray-600"
                 >
                   {platform.name}
                 </span>

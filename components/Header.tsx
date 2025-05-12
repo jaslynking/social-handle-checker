@@ -18,10 +18,10 @@ const Header = () => {
         </div>
         <div className="mx-auto max-w-3xl pt-32 sm:pt-48 pb-6">
           <div className="text-center">
-            <h1 className="text-balance text-4xl sm:text-5xl font-semibold tracking-tight text-gray-900 md:text-6xl">
+            <h1 className="text-balance text-4xl sm:text-5xl font-semibold tracking-tight text-gray-900 dark:text-foreground md:text-6xl">
               Social Handle Checker
             </h1>
-            <p className="mt-8 text-lg font-medium text-gray-600 tracking-wide md:text-xl/8">
+            <p className="mt-8 text-lg font-medium text-gray-600 dark:text-foreground tracking-wide md:text-xl/8">
               Check username availability across developer platforms
             </p>
           </div>

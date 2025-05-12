@@ -16,7 +16,7 @@ const Suggestions = ({ suggestions, onSelectSuggestion }: SuggestionsProps) => {
           <button
             key={index}
             onClick={() => onSelectSuggestion(suggestion)}
-            className="bg-gray-100 hover:bg-gray-200 px-3 py-1 rounded text-sm"
+            className="bg-gray-100 hover:bg-gray-200 px-3 py-1 rounded text-sm dark:text-gray-600"
           >
             @{suggestion}
           </button>

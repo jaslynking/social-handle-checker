@@ -24,8 +24,8 @@ const ResultsList = ({ results }: ResultsListProps) => {
                 : "border-red-500 bg-red-50"
             }`}
           >
-            <div className="font-medium">{result.name}</div>
-            <div className="text-sm mb-2">
+            <div className="font-medium dark:text-gray-600">{result.name}</div>
+            <div className="text-sm mb-2 dark:text-gray-500">
               {result.available ? "Available! 🎉" : "Already taken ❌"}
               {result.error && " (Error checking)"}
             </div>
