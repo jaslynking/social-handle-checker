@@ -7,8 +7,12 @@
   },
   "servers": [
     {
-      "url": "/api",
-      "description": "Local server"
+      "url": "https://your-vercel-domain.vercel.app/api",
+      "description": "Production API"
+    },
+    {
+      "url": "http://localhost:3000/api",
+      "description": "Local Development"
     }
   ],
   "paths": {

@@ -1,120 +1,99 @@
 {
-	"info": {
-		"_postman_id": "6240421d-a8a2-4ebb-9624-38b8740178ce",
-		"name": "Social Handle Checker",
-		"description": "API collection for testing the Social Handle Checker application",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "28889123"
-	},
-	"item": [
-		{
-			"name": "Get Platforms",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/platforms",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"platforms"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Check Username",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/check/:username?username=testuser",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"check",
-						":username"
-					],
-					"query": [
-						{
-							"key": "username",
-							"value": "testuser"
-						}
-					],
-					"variable": [
-						{
-							"key": "username",
-							"value": ""
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Suggestions",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseUrl}}/api/suggestions/:username?username=testuser",
-					"host": [
-						"{{baseUrl}}"
-					],
-					"path": [
-						"api",
-						"suggestions",
-						":username"
-					],
-					"query": [
-						{
-							"key": "username",
-							"value": "testuser"
-						}
-					],
-					"variable": [
-						{
-							"key": "username",
-							"value": ""
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"packages": {},
-				"exec": [
-					""
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "baseUrl",
-			"value": "http://localhost:3000",
-			"type": "string"
-		}
-	]
+  "info": {
+    "_postman_id": "6240421d-a8a2-4ebb-9624-38b8740178ce",
+    "name": "Social Handle Checker",
+    "description": "API collection for testing the Social Handle Checker application",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28889123"
+  },
+  "item": [
+    {
+      "name": "Get Platforms",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/platforms",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "platforms"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check Username",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/check/:username?username=testuser",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "check", ":username"],
+          "query": [
+            {
+              "key": "username",
+              "value": "testuser"
+            }
+          ],
+          "variable": [
+            {
+              "key": "username",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Suggestions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/suggestions/:username?username=testuser",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "suggestions", ":username"],
+          "query": [
+            {
+              "key": "username",
+              "value": "testuser"
+            }
+          ],
+          "variable": [
+            {
+              "key": "username",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
 }

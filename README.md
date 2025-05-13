@@ -51,6 +51,13 @@ Check out the live application: [social-handle-checker.vercel.app](https://socia
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## API Documentation
+
+API documentation is available at:
+
+- Production: [https://your-vercel-domain.vercel.app/api-docs](https://your-vercel-domain.vercel.app/api-docs)
+- Local Development: [http://localhost:3000/api-docs](http://localhost:3000/api-docs) (when running the development server)
+
 ## API Endpoints
 
 This project includes a REST API with the following endpoints:
@@ -58,8 +65,6 @@ This project includes a REST API with the following endpoints:
 - `GET /api/platforms` - List all supported platforms
 - `GET /api/check/:username` - Check username availability
 - `GET /api/suggestions/:username` - Get alternative username suggestions
-
-Documentation is available at [/api-docs](https://social-handle-checker.vercel.app/api-docs) when running the application.
 
 ## Testing with Postman
 
