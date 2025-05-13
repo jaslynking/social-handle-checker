@@ -55,7 +55,7 @@ Check out the live application: [social-handle-checker.vercel.app](https://socia
 
 API documentation is available at:
 
-- Production: [https://your-vercel-domain.vercel.app/api-docs](https://your-vercel-domain.vercel.app/api-docs)
+- Production: [https://social-handle-checker.vercel.app/api-docs](https://social-handle-checker.vercel.app/api-docs)
 - Local Development: [http://localhost:3000/api-docs](http://localhost:3000/api-docs) (when running the development server)
 
 ## API Endpoints
